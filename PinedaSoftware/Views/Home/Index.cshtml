@@ -1,0 +1,278 @@
+﻿@using PinedaSoftware.Models
+@model ContactModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div id="settings" data-url-contant="@Url.Action("ContantEmail", "Ajax")">
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#top">PinedaSoftware</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Items</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About Me</a>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead -->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image -->
+        <img id="headShot" class="mb-5 avatar-image" src="~/Content/images/Image_Profile.jpg" alt="Noe Pineda" />
+        <!-- Masthead Heading -->
+        <h1 class="masthead-heading text-uppercase mb-0">Noe Pineda</h1>
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading -->
+        <p class="masthead-subheading font-weight-light mb-0">Full Stack - Software Developer</p>
+    </div>
+</header>
+<!-- Portfolio Section -->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Items</h2>
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+
+        <!-- Portfolio Grid Items -->
+        <div class="row">
+            <button type="button" class="btn btn-primary btn-lg btn-block button-vertical-padding button-horizontal-margin" data-toggle="modal" data-target="#portfolioModal1">
+                <span>My Story</span> &nbsp;&nbsp;&nbsp;<img class="img-fluid image-size image-bottom-margin" src="~/Content/images/open-book.png" alt="Icons made by https://www.flaticon.com/authors/freepik" />
+            </button>
+
+            <button type="button" class="btn btn-primary btn-lg btn-block button-vertical-padding button-horizontal-margin" data-toggle="modal" data-target="#portfolioModal2">
+                <span>Projects</span> &nbsp;&nbsp;&nbsp;<img class="img-fluid image-size image-bottom-margin" src="~/Content/images/start-up.png" alt="Icons made by https://www.flaticon.com/authors/freepik" />
+            </button>
+
+            <button type="button" id="github_button" class="btn btn-primary btn-lg btn-block button-vertical-padding button-horizontal-margin" data-toggle="modal">
+                <span>GitHub</span> &nbsp;&nbsp;&nbsp;<img class="img-fluid image-size image-bottom-margin" src="~/Content/images/github-logo.png" alt="Icons made by https://www.flaticon.com/authors/freepik" />
+            </button>
+
+            <button type="button" id="linkedin_button" class="btn btn-primary btn-lg btn-block button-vertical-padding button-horizontal-margin" data-toggle="modal">
+                <span>LinkedIn</span> &nbsp;&nbsp;&nbsp;<img class="img-fluid image-size image-bottom-margin" src="~/Content/images/linkedin-button.png" alt="Icons made by https://www.flaticon.com/authors/freepik" />
+            </button>
+
+            <button type="button" id="stackoverflow_button" class="btn btn-primary btn-lg btn-block button-vertical-padding button-horizontal-margin" data-toggle="modal">
+                <span>Stack Overflow</span> &nbsp;&nbsp;&nbsp;<img class="img-fluid image-size image-bottom-margin" src="~/Content/images/stack-overflow.png" alt="Icons made by https://www.flaticon.com/authors/freepik" />
+            </button>
+        </div>
+        <!-- /.row -->
+    </div>
+</section>
+<!-- About Section -->
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content -->
+        <div class="row">
+            <div class="col-lg-4 ml-auto">
+                <p class="lead">
+                    I am a full stack software developer. I started programming 
+                    for a living using the .NET Framework in 2017. I have a wide 
+                    set of skills in web development e.g. web application 
+                    hosting, frontend development, backend development, and 
+                    database management. For hosting I have experience with IIS 
+                    on Windows OS. For frontend development I have experience 
+                    with HTML, CSS/Bootstrap & JavaScript/JQuery. For backend 
+                    I have experience with C#. Lastly, for database management 
+                    I have experience with MSSQL.
+                </p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+                <p class="lead">
+                    My passion for software development and self-improvement 
+                    doesn’t end when I leave the office after a full day of 
+                    programming. I dedicate time to learning the fundamental 
+                    concepts of Computer Science such as data structures, 
+                    algorithms, asymptotic notation (Big(O)), etc. I 
+                    challenge myself with 
+                    <a href="https://leetcode.com">LeetCode.com </a> 
+                    problems to improve my problem-solving skills. I also have 
+                    an associate degree in Computer Programming from Mesa 
+                    Community College.
+                </p>
+            </div>
+        </div>
+        <!-- About Section Button -->
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="~/Content/documents/resume/Noe Pineda Resume.pdf">
+                <i class="fas fa-download mr-2"></i>
+                Download Resume
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Contact Section -->
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading -->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <!-- Icon Divider -->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <!--Form-->
+                @Html.Partial("~/Views/Home/Partial/_Contact.cshtml", new ContactModel())
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Location -->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Location</h4>
+                <p class="lead mb-0">
+                    Phoenix, AZ
+                    <br>85042
+                </p>
+            </div>
+            <!-- Footer Social Icons -->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase mb-4">Around the Web</h4>
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="@ViewBag.Url_StackOverflow">
+                    <i class="fab fa-fw fa-linkedin-in"></i>
+                </a>
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="@ViewBag.Url_LinkedIn">
+                    <i class="fab fa-fw fa-stack-overflow"></i>
+                </a>
+                <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="@ViewBag.Url_GitHub">
+                    <i class="fab fa-fw fa-github"></i>
+                </a>
+            </div>
+            <!-- Footer About Text -->
+            <div class="col-lg-4">
+                <h4 class="text-uppercase mb-4">About PinedaSoftware</h4>
+                <p class="lead mb-0">
+                    PinedaSoftware is Powered by ASP.NET MVC and Bootstrap.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Copyright Section -->
+<section class="copyright py-4 text-center text-white">
+    <div class="container">
+        <small>1.0.0</small>
+    </div>
+</section>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+<!-- Portfolio Modals -->
+<!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <i class="fas fa-times"></i>
+                </span>
+            </button>
+            <div class="modal-body text-center">
+                @Html.Partial("~/Views/Home/Partial/_MyStory.cshtml")
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <i class="fas fa-times"></i>
+                </span>
+            </button>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Projects</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image -->
+                            <img class="img-fluid rounded mb-5" src="~/Content/images/Code on Mac.JPG" alt="Picture of code for a personal project of mine" />
+                             @*Portfolio Modal - Text*@ 
+                            <p class="mb-5">
+                                Comming soon.
+                            </p>
+                            
+                            <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <i class="fas fa-times fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/landingPage")
+    @Scripts.Render("~/bundles/contact")
+}

@@ -1,0 +1,63 @@
+﻿@using PinedaSoftware.Models;
+@model ContactModel
+@{
+    Layout = null;
+}
+
+<!--'Contanct Me' Form-->
+<form name="sentMessage" id="contactForm" novalidate="novalidate">
+    <div class="control-group">
+        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Name</label>
+            <input class="form-control" id="name" name="Name" type="text" placeholder="Name" required="required" maxlength="20" data-validation-required-message="Please enter your name.">
+            <div class="help-block text-danger">
+                <ul role="alert" id="name-validation-message-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Email Address</label>
+            <input class="form-control" id="email" name="Email" type="email" placeholder="Email Address" required="required" maxlength="35" data-validation-required-message="Please enter your email address.">
+            <div class="help-block text-danger">
+                <ul role="alert" id="email-validation-message-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Phone Number</label>
+            <input class="form-control" id="phone" name="Phone" type="tel" placeholder="Phone Number (Optional)" maxlength="13" data-validation-required-message="Please enter your phone number.">
+            <div class="help-block text-danger">
+                <ul role="alert" id="phone-validation-message-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+            <label>Message</label>
+            <textarea class="form-control" id="message" name="Message" rows="5" placeholder="Message" required="required" maxlength="250" data-validation-required-message="Please enter a message."></textarea>
+            <div id="message-charactersleft-counter" class="gray"></div>
+            <div class="help-block text-danger">
+                <ul role="alert" id="message-validation-message-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="form-username-field">
+        <label>Username</label>
+        <input type="text" name="Username" id="Username" />
+    </div>
+
+    <br>
+    <div id="contactFormTryAgain"></div>
+    
+    <!--Submit Buttons-->
+    <div class="form-group" id="submit-form-group">
+        <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButtonDisabled" onclick="preventSubmit(event);">Fill Form To Send Message</button>
+        <button type="submit" class="btn btn-primary btn-xl hide" id="sendMessageButton">Send Message</button>
+    </div>
+</form>
+
+<!--'Contanct Me' Form Submitted Message-->
+<div id="contactFormSubmitted">
+</div>

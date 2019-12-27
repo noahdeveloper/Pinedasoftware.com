@@ -1,0 +1,63 @@
+﻿.avatar-image {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+a { color: blue; }
+
+.image-size {
+    width: 50px;
+    height: 50px;
+}
+
+.button-inner-left-padding {
+    padding-left: 60px;
+}
+
+.button-vertical-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+span {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: xx-large;
+}
+
+.image-bottom-margin {
+    margin-bottom: 15px;
+}
+
+.button-horizontal-margin { 
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#headShot {
+    border: 4px solid white;
+}
+
+.gray {
+    color: gray;
+}
+
+.hide {
+    display: none;
+}
+
+#form-username-field {
+    display: none;
+}
+
+.top-margin-10px {
+    margin-top: 10px;
+}
+
+.bottom-margin-10px {
+    margin-bottom: 10px;
+}
+
+.bottom-margin-3rem {
+    margin-bottom: 3rem;
+}
